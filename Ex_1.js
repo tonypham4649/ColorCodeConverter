@@ -3,11 +3,13 @@ array = [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20]
 function cleaner(array){
     count = {};
     for (element of array){
-        if (count[element]){
-            count[element] += 1;
-        } else {
-            count[element] = 1;
-        }
+//         if (count[element]){
+//             count[element] += 1;
+//         } else {
+//             count[element] = 1;
+//         }
+        count[element] = (count[element] || 0) + 1
+        console.log(count[element])
     }
     n_array = [];
     l_holder = [];
