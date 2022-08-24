@@ -9,7 +9,6 @@ function cleaner(array){
 //             count[element] = 1;
 //         }
         count[element] = (count[element] || 0) + 1
-        console.log(count[element])
     }
     n_array = [];
     l_holder = [];
